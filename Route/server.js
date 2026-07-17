@@ -1,7 +1,7 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-  // GET route
+  // for GET route
   if (req.url === "/users" && req.method === "GET") {
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(
@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
     );
   }
 
-  // POST route
+  // for POST route
   else if (req.url === "/users" && req.method === "POST") {
     res.writeHead(200, { "Content-Type": "json" });
     res.end(
