@@ -1,0 +1,8 @@
+# Dependencies
+**/node_modules/
+/node_modules/
+../node_modules/
+
+# Package files (if not needed)
+package-lock.json
+../package-lock.json
